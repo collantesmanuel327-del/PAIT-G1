@@ -6,22 +6,24 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
-import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.Color;
+import java.awt.Font;
 
-public class ventana2 extends JFrame {
+public class Ecuaciones extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
+	/**
+	 * Launch the application.
+	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ventana2 frame = new ventana2();
+					Ecuaciones frame = new Ecuaciones();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -30,55 +32,57 @@ public class ventana2 extends JFrame {
 		});
 	}
 
-	public ventana2() {
+	/**
+	 * Create the frame.
+	 */
+	public Ecuaciones() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setResizable(false); 
-		this.setSize(350, 200);
+		this.setResizable(false);
+		setSize(450, 300);
 		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(173, 255, 47));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Sistema de ecuaciones");
-		lblNewLabel.setBackground(new Color(255, 255, 255));
-		lblNewLabel.setFont(new Font("Times New Roman", Font.ITALIC, 16));
-		lblNewLabel.setBounds(97, 11, 153, 27);
+		JLabel lblNewLabel = new JLabel("Elija la ecuacion");
+		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 15));
+		lblNewLabel.setBounds(167, 20, 170, 33);
 		contentPane.add(lblNewLabel);
 		
-		JButton btnNewButton = new JButton("Volver a menú");
-		btnNewButton.setBackground(new Color(255, 255, 255));
+		JButton btnNewButton = new JButton("Menu");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ventana1 v1 = new ventana1();
 				v1.setVisible(true);
-				ventana2.this.dispose();
+			    Ecuaciones.this.dispose();
 			}
 		});
-		btnNewButton.setBounds(110, 127, 125, 23);
+		btnNewButton.setBounds(10, 233, 84, 20);
 		contentPane.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("2x2");
+		JButton btnNewButton_1 = new JButton("Primer grado");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				matriz2 c2 = new matriz2();
-				c2.setVisible(true);
-				ventana2.this.dispose();
+				primer M = new primer();
+				M.setVisible(true);
+				Ecuaciones.this.dispose();
 			}
 		});
-		btnNewButton_1.setBounds(42, 60, 89, 23);
+		btnNewButton_1.setBounds(79, 122, 132, 20);
 		contentPane.add(btnNewButton_1);
 		
-		JButton btnNewButton_2 = new JButton("3x3");
+		JButton btnNewButton_2 = new JButton("Segundo grado");
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				matriz3 m3 = new matriz3();
-				m3.setVisible(true);
-				ventana2.this.dispose();
+				segundo K = new segundo();
+				K.setVisible(true);
+				Ecuaciones.this.dispose();
+				
+				
 			}
 		});
-		btnNewButton_2.setBounds(208, 60, 89, 23);
+		btnNewButton_2.setBounds(222, 122, 115, 20);
 		contentPane.add(btnNewButton_2);
 
 	}
