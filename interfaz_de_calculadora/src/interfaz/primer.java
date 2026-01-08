@@ -44,7 +44,7 @@ public class primer extends JFrame {
 	public primer() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		setSize(462, 307);
+		setSize(446, 307);
 		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -80,7 +80,7 @@ public class primer extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		r = new JTextField();
-		r.setBounds(166, 163, 148, 31);
+		r.setBounds(145, 163, 148, 31);
 		contentPane.add(r);
 		r.setColumns(10);
 		
@@ -99,10 +99,21 @@ public class primer extends JFrame {
 				
 			}
 		});
-		btnNewButton.setBounds(189, 122, 84, 20);
+		btnNewButton.setBounds(178, 136, 84, 20);
 		contentPane.add(btnNewButton);
 		lblNewLabel_3.setBounds(166, 10, 98, 32);
 		contentPane.add(lblNewLabel_3);
+		
+		JButton btnNewButton_1 = new JButton("Atrás");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Ecuaciones ec = new Ecuaciones();
+				ec.setVisible(true);
+				primer.this.dispose();
+			}
+		});
+		btnNewButton_1.setBounds(28, 222, 89, 23);
+		contentPane.add(btnNewButton_1);
 
 	}
 }

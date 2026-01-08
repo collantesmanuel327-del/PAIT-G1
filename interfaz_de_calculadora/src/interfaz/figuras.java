@@ -75,12 +75,12 @@ public class figuras extends JFrame {
 		
 		JLabel Cuadrado = new JLabel("New label");
 		Cuadrado.setIcon(new ImageIcon(figuras.class.getResource("/imagen/Captura de pantalla 2026-01-07 113817.png")));
-		Cuadrado.setBounds(75, 6, 106, 106);
+		Cuadrado.setBounds(75, 33, 106, 106);
 		contentPane.add(Cuadrado);
 		
 		JLabel rectangulo = new JLabel("New label");
 		rectangulo.setIcon(new ImageIcon(figuras.class.getResource("/imagen/Captura de pantalla 2026-01-07 113926.png")));
-		rectangulo.setBounds(610, 10, 106, 98);
+		rectangulo.setBounds(610, 12, 106, 98);
 		contentPane.add(rectangulo);
 		
 		JLabel Circulo = new JLabel("New label");
@@ -102,21 +102,24 @@ public class figuras extends JFrame {
 		altura = new JTextField();
 		altura.setHorizontalAlignment(SwingConstants.CENTER);
 		altura.setColumns(10);
-		altura.setBounds(732, 361, 50, 18);
+		altura.setBounds(724, 361, 50, 18);
 		contentPane.add(altura);
 		
 		JLabel lblNewLabel = new JLabel("Base");
+		lblNewLabel.setForeground(new Color(255, 255, 255));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(541, 342, 44, 12);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Altura");
+		lblNewLabel_1.setForeground(new Color(255, 255, 255));
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setBounds(738, 342, 44, 12);
+		lblNewLabel_1.setBounds(730, 342, 44, 12);
 		contentPane.add(lblNewLabel_1);
 		
 		rest = new JTextField();
-		rest.setBounds(596, 422, 141, 26);
+		rest.setHorizontalAlignment(SwingConstants.CENTER);
+		rest.setBounds(576, 426, 161, 26);
 		contentPane.add(rest);
 		rest.setColumns(10);
 		
@@ -133,16 +136,17 @@ public class figuras extends JFrame {
 				
 			}
 		});
-		btnNewButton_1.setBounds(631, 389, 73, 20);
+		btnNewButton_1.setBounds(610, 391, 95, 20);
 		contentPane.add(btnNewButton_1);
 		
 		lado = new JTextField();
 		lado.setHorizontalAlignment(SwingConstants.CENTER);
-		lado.setBounds(632, 359, 55, 20);
+		lado.setBounds(631, 360, 55, 20);
 		contentPane.add(lado);
 		lado.setColumns(10);
 		
 		JLabel lblNewLabel_2 = new JLabel("Lado");
+		lblNewLabel_2.setForeground(new Color(255, 255, 255));
 		lblNewLabel_2.setBounds(643, 342, 44, 12);
 		contentPane.add(lblNewLabel_2);
 		
@@ -153,8 +157,9 @@ public class figuras extends JFrame {
 		contentPane.add(rad);
 		
 		resc = new JTextField();
+		resc.setHorizontalAlignment(SwingConstants.CENTER);
 		resc.setColumns(10);
-		resc.setBounds(53, 422, 155, 34);
+		resc.setBounds(46, 422, 182, 34);
 		contentPane.add(resc);
 		
 		JButton btnNewButton_2 = new JButton("Calcular");
@@ -167,12 +172,12 @@ public class figuras extends JFrame {
 				resc.setText(re);
 			}
 		});
-		btnNewButton_2.setBounds(89, 389, 73, 20);
+		btnNewButton_2.setBounds(88, 391, 87, 20);
 		contentPane.add(btnNewButton_2);
 		
 		lado2 = new JTextField();
 		lado2.setHorizontalAlignment(SwingConstants.CENTER);
-		lado2.setBounds(118, 126, 44, 18);
+		lado2.setBounds(107, 150, 44, 18);
 		contentPane.add(lado2);
 		lado2.setColumns(10);
 		
@@ -186,17 +191,18 @@ public class figuras extends JFrame {
 				resp.setText(cuadrado);
 			}
 		});
-		btnNewButton_3.setBounds(102, 166, 73, 20);
+		btnNewButton_3.setBounds(81, 179, 100, 20);
 		contentPane.add(btnNewButton_3);
 		
 		resp = new JTextField();
-		resp.setBounds(68, 207, 135, 18);
+		resp.setHorizontalAlignment(SwingConstants.CENTER);
+		resp.setBounds(63, 210, 135, 26);
 		contentPane.add(resp);
 		resp.setColumns(10);
 		
 		base2 = new JTextField();
 		base2.setHorizontalAlignment(SwingConstants.CENTER);
-		base2.setBounds(582, 100, 55, 18);
+		base2.setBounds(591, 121, 55, 18);
 		contentPane.add(base2);
 		base2.setColumns(10);
 		
@@ -211,17 +217,18 @@ public class figuras extends JFrame {
 				resr.setText(rectangulo);
 			}
 		});
-		btnNewButton_4.setBounds(631, 132, 73, 20);
+		btnNewButton_4.setBounds(620, 149, 85, 20);
 		contentPane.add(btnNewButton_4);
 		
 		altura2 = new JTextField();
 		altura2.setHorizontalAlignment(SwingConstants.CENTER);
-		altura2.setBounds(682, 100, 55, 18);
+		altura2.setBounds(682, 121, 55, 18);
 		contentPane.add(altura2);
 		altura2.setColumns(10);
 		
 		resr = new JTextField();
-		resr.setBounds(610, 167, 106, 26);
+		resr.setHorizontalAlignment(SwingConstants.CENTER);
+		resr.setBounds(595, 176, 142, 23);
 		contentPane.add(resr);
 		resr.setColumns(10);
 		

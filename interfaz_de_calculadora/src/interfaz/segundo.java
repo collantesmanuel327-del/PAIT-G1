@@ -5,6 +5,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
 
 public class segundo extends JFrame {
 
@@ -32,11 +37,33 @@ public class segundo extends JFrame {
 	 */
 	public segundo() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		this.setResizable(false);
+		setSize(450, 450);
+		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnNewButton = new JButton("Atrás");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Ecuaciones ec = new Ecuaciones();
+				ec.setVisible(true);
+				segundo.this.dispose();
+			}
+		});
+		btnNewButton.setBounds(10, 377, 89, 23);
+		contentPane.add(btnNewButton);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon(segundo.class.getResource("/imagen/snaplytics_converted_gif.gif")));
+		lblNewLabel.setBounds(49, 11, 350, 350);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Bajo construccion ");
+		lblNewLabel_1.setBounds(167, 362, 131, 14);
+		contentPane.add(lblNewLabel_1);
 
 	}
-
 }
