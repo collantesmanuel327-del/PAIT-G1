@@ -70,6 +70,9 @@ public class ventana1 extends JFrame {
 		JButton btnFigurasGeometricas = new JButton("Figuras geometricas");
 		btnFigurasGeometricas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				figuras fi = new figuras ();
+				fi.setVisible(true);
+				ventana1.this.dispose();
 			}
 		});
 		btnFigurasGeometricas.setBounds(10, 45, 143, 37);
