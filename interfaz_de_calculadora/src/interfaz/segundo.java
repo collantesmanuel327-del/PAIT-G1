@@ -56,9 +56,9 @@ public class segundo extends JFrame {
 		btnNewButton.setBounds(10, 377, 89, 23);
 		contentPane.add(btnNewButton);
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(segundo.class.getResource("/imagen/snaplytics_converted_gif.gif")));
-		lblNewLabel.setBounds(49, 11, 350, 350);
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon(segundo.class.getResource("/imagen/ei ei ei ei mun.gif")));
+		lblNewLabel.setBounds(49, 11, 356, 350);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Bajo construccion ");
