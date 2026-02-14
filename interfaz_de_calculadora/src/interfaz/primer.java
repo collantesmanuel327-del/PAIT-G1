@@ -84,8 +84,12 @@ public class primer extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		r = new JTextField();
+<<<<<<< HEAD
 		r.setHorizontalAlignment(SwingConstants.CENTER);
 		r.setBounds(133, 174, 171, 31);
+=======
+		r.setBounds(145, 163, 148, 31);
+>>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
 		contentPane.add(r);
 		r.setColumns(10);
 		
@@ -124,7 +128,11 @@ public class primer extends JFrame {
 				
 			}
 		});
+<<<<<<< HEAD
 		btnNewButton.setBounds(104, 132, 84, 20);
+=======
+		btnNewButton.setBounds(178, 136, 84, 20);
+>>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
 		contentPane.add(btnNewButton);
 		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
@@ -141,6 +149,7 @@ public class primer extends JFrame {
 		});
 		btnNewButton_1.setBounds(28, 222, 89, 23);
 		contentPane.add(btnNewButton_1);
+<<<<<<< HEAD
 		
 		JButton btnNewButton_2 = new JButton("Limpiar");
 		btnNewButton_2.addActionListener(new ActionListener() {
@@ -153,6 +162,8 @@ public class primer extends JFrame {
 		});
 		btnNewButton_2.setBounds(227, 129, 89, 23);
 		contentPane.add(btnNewButton_2);
+=======
+>>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
 
 	}
 }
