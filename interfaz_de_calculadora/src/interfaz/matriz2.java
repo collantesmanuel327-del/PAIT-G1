@@ -43,7 +43,7 @@ public class matriz2 extends JFrame {
 		setBackground(new Color(0, 255, 0));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		this.setSize(342, 290);
+		this.setSize(342, 328);
 		this.setLocationRelativeTo(null);
 		getContentPane().setLayout(new BorderLayout());
 		contentPane = new JPanel();
@@ -66,7 +66,7 @@ public class matriz2 extends JFrame {
 		JButton btnNewButton_1 = new JButton("Menú");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ventana1 v1 = new ventana1();
+				menu v1 = new menu();
 				v1.setVisible(true);
 				matriz2.this.dispose();
 			}
@@ -178,6 +178,17 @@ public class matriz2 extends JFrame {
 		});
 		btnNewButton_3.setBounds(207, 128, 89, 23);
 		contentPane.add(btnNewButton_3);
+		
+		JButton btnNewButton_4 = new JButton("GUARDAR");
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				archivos ar = new archivos();
+				ar.setVisible(true);
+				
+			}
+		});
+		btnNewButton_4.setBounds(113, 255, 89, 23);
+		contentPane.add(btnNewButton_4);
 
 	}
 }

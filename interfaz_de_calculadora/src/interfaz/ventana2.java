@@ -51,7 +51,7 @@ public class ventana2 extends JFrame {
 		btnNewButton.setBackground(new Color(255, 255, 255));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ventana1 v1 = new ventana1();
+				menu v1 = new menu();
 				v1.setVisible(true);
 				ventana2.this.dispose();
 			}

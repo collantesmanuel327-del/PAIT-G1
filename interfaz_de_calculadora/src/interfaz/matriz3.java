@@ -62,7 +62,7 @@ public class matriz3 extends JFrame {
 		JButton btnNewButton = new JButton("Menú");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ventana1 v1 = new ventana1();
+				menu v1 = new menu();
 				v1.setVisible(true);
 				matriz3.this.dispose();
 			}
