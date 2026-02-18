@@ -77,20 +77,20 @@ public class figuras extends JFrame {
 		
 		JLabel Cuadrado = new JLabel("New label");
 		Cuadrado.setIcon(new ImageIcon(figuras.class.getResource("/imagen/Captura de pantalla 2026-01-07 113817.png")));
-<<<<<<< HEAD
+
 		Cuadrado.setBounds(104, 33, 106, 106);
-=======
+
 		Cuadrado.setBounds(75, 33, 106, 106);
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		contentPane.add(Cuadrado);
 		
 		JLabel rectangulo = new JLabel("New label");
 		rectangulo.setIcon(new ImageIcon(figuras.class.getResource("/imagen/Captura de pantalla 2026-01-07 113926.png")));
-<<<<<<< HEAD
+
 		rectangulo.setBounds(610, 18, 106, 92);
-=======
+
 		rectangulo.setBounds(610, 12, 106, 98);
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		contentPane.add(rectangulo);
 		
 		JLabel Circulo = new JLabel("New label");
@@ -118,21 +118,21 @@ public class figuras extends JFrame {
 		contentPane.add(altura);
 		
 		JLabel lblNewLabel = new JLabel("Base");
-<<<<<<< HEAD
+
 		lblNewLabel.setForeground(new Color(0, 0, 0));
-=======
+
 		lblNewLabel.setForeground(new Color(255, 255, 255));
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(541, 342, 44, 12);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Altura");
-<<<<<<< HEAD
+
 		lblNewLabel_1.setForeground(new Color(0, 0, 0));
-=======
+
 		lblNewLabel_1.setForeground(new Color(255, 255, 255));
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_1.setBounds(730, 342, 44, 12);
 		contentPane.add(lblNewLabel_1);
@@ -177,11 +177,11 @@ public class figuras extends JFrame {
 		lado.setColumns(10);
 		
 		JLabel lblNewLabel_2 = new JLabel("Lado");
-<<<<<<< HEAD
+
 		lblNewLabel_2.setForeground(new Color(0, 0, 0));
-=======
+
 		lblNewLabel_2.setForeground(new Color(255, 255, 255));
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		lblNewLabel_2.setBounds(643, 342, 44, 12);
 		contentPane.add(lblNewLabel_2);
 		
@@ -195,11 +195,11 @@ public class figuras extends JFrame {
 		resc = new JTextField();
 		resc.setHorizontalAlignment(SwingConstants.CENTER);
 		resc.setColumns(10);
-<<<<<<< HEAD
+
 		resc.setBounds(66, 430, 186, 26);
-=======
+
 		resc.setBounds(46, 422, 182, 34);
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		contentPane.add(resc);
 		
 		JButton btnNewButton_2 = new JButton("Calcular");
@@ -218,21 +218,21 @@ public class figuras extends JFrame {
 				}
 			}
 		});
-<<<<<<< HEAD
+
 		btnNewButton_2.setBounds(109, 407, 90, 18);
-=======
+
 		btnNewButton_2.setBounds(88, 391, 87, 20);
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		contentPane.add(btnNewButton_2);
 		
 		lado2 = new JTextField();
 		lado2.setText("0");
 		lado2.setHorizontalAlignment(SwingConstants.CENTER);
-<<<<<<< HEAD
+
 		lado2.setBounds(137, 149, 44, 18);
-=======
+
 		lado2.setBounds(107, 150, 44, 18);
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		contentPane.add(lado2);
 		lado2.setColumns(10);
 		
@@ -251,20 +251,20 @@ public class figuras extends JFrame {
 				
 			}
 		});
-<<<<<<< HEAD
+
 		btnNewButton_3.setBounds(115, 174, 95, 12);
-=======
+
 		btnNewButton_3.setBounds(81, 179, 100, 20);
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		contentPane.add(btnNewButton_3);
 		
 		resp = new JTextField();
 		resp.setHorizontalAlignment(SwingConstants.CENTER);
-<<<<<<< HEAD
+
 		resp.setBounds(93, 196, 135, 26);
-=======
+
 		resp.setBounds(63, 210, 135, 26);
->>>>>>> 97c7db10c9ac98433a2d33c79d6654752e2e4dcb
+
 		contentPane.add(resp);
 		resp.setColumns(10);
 		
