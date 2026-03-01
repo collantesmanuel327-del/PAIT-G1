@@ -47,7 +47,7 @@ public class figuras extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		JButton btnNewButton = new JButton("Cuadrado");
+		JButton btnNewButton = new JButton("Circulo");
 		btnNewButton.setBounds(54, 31, 85, 21);
 		btnNewButton.setBackground(Color.WHITE);
 		btnNewButton.addActionListener(new ActionListener() {
@@ -74,7 +74,7 @@ public class figuras extends JFrame {
 		contentPane.add(btnTriangulo);
 	
 		
-		JButton btnCirculo = new JButton("Circulo");
+		JButton btnCirculo = new JButton("Cuadrado");
 		btnCirculo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cuadrado cir = new cuadrado();
@@ -88,7 +88,7 @@ public class figuras extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setIcon(new ImageIcon(figuras.class.getResource("/imagen/88716ab4-ee0d-4f7d-bbff-dcbecd767447.png")));
-		lblNewLabel.setBounds(175, 20, 366, 244);
+		lblNewLabel.setBounds(177, 10, 322, 173);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnNewButton_1 = new JButton("Info.");
@@ -111,6 +111,11 @@ public class figuras extends JFrame {
 		});
 		btnNewButton_2.setBounds(10, 300, 84, 20);
 		contentPane.add(btnNewButton_2);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon(figuras.class.getResource("/imagen/imagen_2026-02-28_231510186.png")));
+		lblNewLabel_1.setBounds(0, 0, 563, 330);
+		contentPane.add(lblNewLabel_1);
 		
 	}
 }

@@ -169,7 +169,7 @@ public class info extends JFrame {
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				txtpnSeleccionarUnaOpcion.setText("");
-				try (FileInputStream fis = new FileInputStream("src/archivos/No disponible.docx");
+				try (FileInputStream fis = new FileInputStream("src/archivos/Figuras general.docx");
 			             XWPFDocument documento = new XWPFDocument(fis)) {
 			            StyledDocument doc = txtpnSeleccionarUnaOpcion.getStyledDocument();
 			            txtpnSeleccionarUnaOpcion.setText("");
@@ -214,6 +214,111 @@ public class info extends JFrame {
 		lblNewLabel_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		lblNewLabel_1_1_1.setBounds(349, 99, 112, 23);
 		contentPane.add(lblNewLabel_1_1_1);
+		
+		JLabel lblNewLabel_1_1_1_1 = new JLabel("Figuras menu");
+		lblNewLabel_1_1_1_1.setHorizontalAlignment(SwingConstants.LEFT);
+		lblNewLabel_1_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblNewLabel_1_1_1_1.setBounds(349, 134, 112, 23);
+		contentPane.add(lblNewLabel_1_1_1_1);
+		
+		JButton btnNewButton_3_1 = new JButton("Leer");
+		btnNewButton_3_1.addActionListener(new ActionListener() {
+		    public void actionPerformed(ActionEvent e) {
+		        txtpnSeleccionarUnaOpcion.setText("");
+		        try (FileInputStream fis = new FileInputStream("src/archivos/info circulo.docx");
+		             XWPFDocument documento = new XWPFDocument(fis)) {
+		            StyledDocument doc = txtpnSeleccionarUnaOpcion.getStyledDocument();
+		            txtpnSeleccionarUnaOpcion.setText("");
+		            for (XWPFParagraph para : documento.getParagraphs()) {
+		                doc.insertString(doc.getLength(), para.getText() + "\n", null);
+		            }
+		            for (XWPFPictureData cuadro : documento.getAllPictures()) {
+		                byte[] datosImagen = cuadro.getData();
+		                ImageIcon icono = new ImageIcon(datosImagen);
+		                Image img = icono.getImage().getScaledInstance(200, 150, Image.SCALE_SMOOTH);
+		                txtpnSeleccionarUnaOpcion.insertIcon(new ImageIcon(img));
+		                doc.insertString(doc.getLength(), "\n", null);
+		            }
+		        } catch (Exception ex) {
+		            JOptionPane.showMessageDialog(null, "Error al leer el .docx: " + ex.getMessage());
+		        }
+		    }
+		});
+		btnNewButton_3_1.setFont(new Font("Times New Roman", Font.PLAIN, 11));
+		btnNewButton_3_1.setBounds(471, 167, 89, 23);
+		contentPane.add(btnNewButton_3_1);
+		
+		JLabel lblNewLabel_1_1_1_1_1 = new JLabel("Info Circulo");
+		lblNewLabel_1_1_1_1_1.setHorizontalAlignment(SwingConstants.LEFT);
+		lblNewLabel_1_1_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblNewLabel_1_1_1_1_1.setBounds(349, 167, 112, 23);
+		contentPane.add(lblNewLabel_1_1_1_1_1);
+		
+		JButton btnNewButton_3_1_1 = new JButton("Leer");
+		btnNewButton_3_1_1.addActionListener(new ActionListener() {
+		    public void actionPerformed(ActionEvent e) {
+		        txtpnSeleccionarUnaOpcion.setText("");
+		        try (FileInputStream fis = new FileInputStream("src/archivos/info teiangulo.docx");
+		             XWPFDocument documento = new XWPFDocument(fis)) {
+		            StyledDocument doc = txtpnSeleccionarUnaOpcion.getStyledDocument();
+		            txtpnSeleccionarUnaOpcion.setText("");
+		            for (XWPFParagraph para : documento.getParagraphs()) {
+		                doc.insertString(doc.getLength(), para.getText() + "\n", null);
+		            }
+		            for (XWPFPictureData cuadro : documento.getAllPictures()) {
+		                byte[] datosImagen = cuadro.getData();
+		                ImageIcon icono = new ImageIcon(datosImagen);
+		                Image img = icono.getImage().getScaledInstance(200, 150, Image.SCALE_SMOOTH);
+		                txtpnSeleccionarUnaOpcion.insertIcon(new ImageIcon(img));
+		                doc.insertString(doc.getLength(), "\n", null);
+		            }
+		        } catch (Exception ex) {
+		            JOptionPane.showMessageDialog(null, "Error al leer el .docx: " + ex.getMessage());
+		        }
+		    }
+		});
+		btnNewButton_3_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 11));
+		btnNewButton_3_1_1.setBounds(471, 201, 89, 23);
+		contentPane.add(btnNewButton_3_1_1);
+		
+		JLabel lblNewLabel_1_1_1_1_1_1 = new JLabel("Info Triangulo");
+		lblNewLabel_1_1_1_1_1_1.setHorizontalAlignment(SwingConstants.LEFT);
+		lblNewLabel_1_1_1_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblNewLabel_1_1_1_1_1_1.setBounds(349, 201, 112, 23);
+		contentPane.add(lblNewLabel_1_1_1_1_1_1);
+		
+		JButton btnNewButton_3_1_1_1 = new JButton("Leer");
+		btnNewButton_3_1_1_1.addActionListener(new ActionListener() {
+		    public void actionPerformed(ActionEvent e) {
+		        txtpnSeleccionarUnaOpcion.setText("");
+		        try (FileInputStream fis = new FileInputStream("src/archivos/info cuadrado.docx");
+		             XWPFDocument documento = new XWPFDocument(fis)) {
+		            StyledDocument doc = txtpnSeleccionarUnaOpcion.getStyledDocument();
+		            txtpnSeleccionarUnaOpcion.setText("");
+		            for (XWPFParagraph para : documento.getParagraphs()) {
+		                doc.insertString(doc.getLength(), para.getText() + "\n", null);
+		            }
+		            for (XWPFPictureData cuadro : documento.getAllPictures()) {
+		                byte[] datosImagen = cuadro.getData();
+		                ImageIcon icono = new ImageIcon(datosImagen);
+		                Image img = icono.getImage().getScaledInstance(200, 150, Image.SCALE_SMOOTH);
+		                txtpnSeleccionarUnaOpcion.insertIcon(new ImageIcon(img));
+		                doc.insertString(doc.getLength(), "\n", null);
+		            }
+		        } catch (Exception ex) {
+		            JOptionPane.showMessageDialog(null, "Error al leer el .docx: " + ex.getMessage());
+		        }
+		    }
+		});
+		btnNewButton_3_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 11));
+		btnNewButton_3_1_1_1.setBounds(471, 234, 89, 23);
+		contentPane.add(btnNewButton_3_1_1_1);
+		
+		JLabel lblNewLabel_1_1_1_1_1_1_1 = new JLabel("Info Cuadrado");
+		lblNewLabel_1_1_1_1_1_1_1.setHorizontalAlignment(SwingConstants.LEFT);
+		lblNewLabel_1_1_1_1_1_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblNewLabel_1_1_1_1_1_1_1.setBounds(349, 234, 112, 23);
+		contentPane.add(lblNewLabel_1_1_1_1_1_1_1);
 		
 
 	}

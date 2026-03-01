@@ -22,9 +22,6 @@ public class calculadora extends JFrame {
 	private JTextField b;
 	private JTextField c;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -38,9 +35,6 @@ public class calculadora extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public calculadora() {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(1000, 100, 220, 310);
