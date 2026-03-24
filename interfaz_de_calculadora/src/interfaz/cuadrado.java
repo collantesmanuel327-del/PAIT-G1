@@ -24,7 +24,7 @@ public class cuadrado extends JFrame {
     private JPanel contentPane;
     private JTextField textField;
     private JTextArea textArea;
-    private JLabel lblLado; // ← declarado como atributo
+    private JLabel lblLado;
 
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
@@ -50,7 +50,6 @@ public class cuadrado extends JFrame {
         setContentPane(contentPane);
         contentPane.setLayout(null);
 
-        // Etiqueta dinámica
         lblLado = new JLabel("L=");
         lblLado.setBounds(58, 225, 70, 26);
         contentPane.add(lblLado);
@@ -81,7 +80,7 @@ public class cuadrado extends JFrame {
         lblDiagonal.setBounds(362, 140, 223, 43);
         contentPane.add(lblDiagonal);
 
-        // ComboBox con opciones
+        // opciones
         JComboBox<String> comboBox = new JComboBox<>(new String[]{
             "Área",
             "Perímetro",
@@ -90,7 +89,7 @@ public class cuadrado extends JFrame {
         comboBox.setBounds(343, 228, 110, 20);
         contentPane.add(comboBox);
 
-        // Cambia la etiqueta según la opción elegida
+        // la etiqueta según la opción elegida
         comboBox.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String seleccion = (String) comboBox.getSelectedItem();
@@ -126,19 +125,16 @@ public class cuadrado extends JFrame {
 
                     switch (seleccion) {
                         case "Área":
-                            // Entrada: Lado → calcula Área
                             float area = L * L;
                             resultado = String.format("Área = %.2f", area);
                             break;
 
                         case "Perímetro":
-                            // Entrada: Lado → calcula Perímetro
                             float perimetro = 4 * L;
                             resultado = String.format("Perímetro = %.2f", perimetro);
                             break;
 
                         case "Diagonal":
-                            // Entrada: Lado → calcula Diagonal
                             float diagonal = L * (float) Math.sqrt(2);
                             resultado = String.format("Diagonal = %.2f", diagonal);
                             break;
@@ -176,7 +172,7 @@ public class cuadrado extends JFrame {
         contentPane.add(retro);
 
         JLabel lblNewLabel = new JLabel("New label");
-        lblNewLabel.setIcon(new ImageIcon(cuadrado.class.getResource("/imagen/images.jpg")));
+        lblNewLabel.setIcon(new ImageIcon(cuadrado.class.getResource("/imagen/hornet.png")));
         lblNewLabel.setBounds(58, 33, 158, 160);
         contentPane.add(lblNewLabel);
 
@@ -190,7 +186,6 @@ public class cuadrado extends JFrame {
         btnInfo.setBounds(453, 376, 84, 20);
         contentPane.add(btnInfo);
 
-        // Botón Borrar
         JButton btnNewButton_1 = new JButton("Borrar");
         btnNewButton_1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

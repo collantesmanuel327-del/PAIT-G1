@@ -24,7 +24,7 @@ public class Triangulo extends JFrame {
     private JPanel contentPane;
     private JTextField Incognita;
     private JTextArea textArea;
-    private JLabel lblLado; // ← declarado como atributo para poder modificarlo
+    private JLabel lblLado;
 
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
@@ -76,7 +76,6 @@ public class Triangulo extends JFrame {
         Incognita.setColumns(10);
         contentPane.add(Incognita);
 
-        // ComboBox con las opciones
         JComboBox<String> comboBox = new JComboBox<>(new String[]{
             "Área",
             "Perímetro",
@@ -85,7 +84,6 @@ public class Triangulo extends JFrame {
         comboBox.setBounds(240, 255, 100, 20);
         contentPane.add(comboBox);
 
-        // Cambia la etiqueta según la opción elegida
         comboBox.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String seleccion = (String) comboBox.getSelectedItem();
@@ -120,20 +118,17 @@ public class Triangulo extends JFrame {
                     String resultado = "";
 
                     switch (seleccion) {
-                        case "Área":
-                            // Entrada: Lado → calcula Área
+                        case "Área":                            
                             float area = (float)((valor * valor * Math.sqrt(3)) / 4);
                             resultado = String.format("Área = %.2f", area);
                             break;
 
-                        case "Perímetro":
-                            // Entrada: Lado → calcula Perímetro
+                        case "Perímetro":                           
                             float perimetro = 3 * valor;
                             resultado = String.format("Perímetro = %.2f", perimetro);
                             break;
 
-                        case "Lado":
-                            // Entrada: Perímetro → calcula Lado
+                        case "Lado":                           
                             float lado = valor / 3;
                             resultado = String.format("Lado = %.2f", lado);
                             break;
@@ -171,7 +166,7 @@ public class Triangulo extends JFrame {
         contentPane.add(retroseder);
 
         JLabel lblNewLabel = new JLabel("New label");
-        lblNewLabel.setIcon(new ImageIcon(Triangulo.class.getResource("/imagen/imagen_2026-02-24_015826849.png")));
+        lblNewLabel.setIcon(new ImageIcon(Triangulo.class.getResource("/imagen/ChatGPT Image 9 mar 2026, 10_08_55 p.m. (1).png")));
         lblNewLabel.setBounds(17, 10, 250, 207);
         contentPane.add(lblNewLabel);
 

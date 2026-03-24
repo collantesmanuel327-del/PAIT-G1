@@ -173,7 +173,7 @@ public class circulo extends JFrame {
         contentPane.add(respuesta);
 
         JLabel lblNewLabel = new JLabel("New label");
-        lblNewLabel.setIcon(new ImageIcon(circulo.class.getResource("/imagen/circu (1) (1).jpg")));
+        lblNewLabel.setIcon(new ImageIcon(circulo.class.getResource("/imagen/hollow.png")));
         lblNewLabel.setBounds(52, 28, 300, 169);
         contentPane.add(lblNewLabel);
 

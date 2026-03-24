@@ -11,6 +11,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Color;
+import java.awt.Font;
 
 public class figuras extends JFrame {
 
@@ -48,6 +49,7 @@ public class figuras extends JFrame {
 		setContentPane(contentPane);
 		
 		JButton btnNewButton = new JButton("Circulo");
+		btnNewButton.setFont(new Font("Sitka Text", Font.ITALIC, 10));
 		btnNewButton.setBounds(54, 31, 85, 21);
 		btnNewButton.setBackground(Color.WHITE);
 		btnNewButton.addActionListener(new ActionListener() {
@@ -61,6 +63,7 @@ public class figuras extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnTriangulo = new JButton("Triangulo");
+		btnTriangulo.setFont(new Font("Sitka Text", Font.ITALIC, 10));
 		btnTriangulo.setBounds(54, 84, 85, 21);
 		btnTriangulo.addActionListener(new ActionListener() {
 			
@@ -75,6 +78,7 @@ public class figuras extends JFrame {
 	
 		
 		JButton btnCirculo = new JButton("Cuadrado");
+		btnCirculo.setFont(new Font("Sitka Text", Font.ITALIC, 10));
 		btnCirculo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cuadrado cir = new cuadrado();
@@ -87,11 +91,12 @@ public class figuras extends JFrame {
 		contentPane.add(btnCirculo);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon(figuras.class.getResource("/imagen/88716ab4-ee0d-4f7d-bbff-dcbecd767447.png")));
+		lblNewLabel.setIcon(new ImageIcon(figuras.class.getResource("/imagen/figuras.png")));
 		lblNewLabel.setBounds(177, 10, 322, 173);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnNewButton_1 = new JButton("Info.");
+		btnNewButton_1.setFont(new Font("Sitka Text", Font.ITALIC, 10));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			 info i = new info();
@@ -102,6 +107,7 @@ public class figuras extends JFrame {
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("Atras");
+		btnNewButton_2.setFont(new Font("Sitka Text", Font.ITALIC, 10));
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				menu mn = new menu();

@@ -39,7 +39,7 @@ public class menu extends JFrame {
 		//mantiene a la ventana del mismo tamaño
 		this.setResizable(false);
 		//los 2 primeros parametros son posicion en pantalla
-		this.setSize(477, 289);
+		this.setSize(547, 306);
 		//coloca la pantalla en el centro
 		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
@@ -60,12 +60,12 @@ public class menu extends JFrame {
 				menu.this.dispose();
 				}
 		});
-		btnNewButton.setBounds(42, 116, 93, 19);
+		btnNewButton.setBounds(59, 115, 93, 19);
 		contentPane.add(btnNewButton);
 		
 		JLabel lblNewLabel = new JLabel("Calculadora Algebraica ");
-		lblNewLabel.setFont(new Font("Times New Roman", Font.ITALIC, 18));
-		lblNewLabel.setBounds(127, 11, 204, 35);
+		lblNewLabel.setFont(new Font("Times New Roman", Font.ITALIC, 20));
+		lblNewLabel.setBounds(158, 0, 213, 35);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnFigurasGeometricas = new JButton("Ir");
@@ -76,12 +76,12 @@ public class menu extends JFrame {
 				menu.this.dispose();
 			}
 		});
-		btnFigurasGeometricas.setBounds(42, 71, 93, 19);
+		btnFigurasGeometricas.setBounds(59, 70, 93, 19);
 		contentPane.add(btnFigurasGeometricas);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(menu.class.getResource("/imagen/istockphoto-470493341-612x612 (1).jpg")));
-		lblNewLabel_1.setBounds(220, 61, 231, 154);
+		lblNewLabel_1.setBounds(255, 57, 231, 154);
 		contentPane.add(lblNewLabel_1);
 		
 		JButton btnNewButton_1 = new JButton("Ir");
@@ -92,30 +92,33 @@ public class menu extends JFrame {
 				menu.this.dispose();
 			}
 		});
-		btnNewButton_1.setBounds(42, 162, 93, 19);
+		btnNewButton_1.setBounds(59, 164, 93, 19);
 		contentPane.add(btnNewButton_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Ecuaciones 1er y 2do grado");
-		lblNewLabel_2.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblNewLabel_2.setForeground(new Color(255, 250, 250));
+		lblNewLabel_2.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(22, 146, 160, 19);
+		lblNewLabel_2.setBounds(10, 145, 213, 19);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("Sistemas de ecuaciones");
-		lblNewLabel_3.setFont(new Font("Times New Roman", Font.PLAIN, 12));
-		lblNewLabel_3.setBounds(42, 101, 133, 14);
+		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_3.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		lblNewLabel_3.setBounds(10, 96, 205, 19);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Figuras geometricas");
-		lblNewLabel_4.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblNewLabel_4.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		lblNewLabel_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4.setBounds(27, 57, 133, 14);
+		lblNewLabel_4.setBounds(30, 51, 154, 19);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_2_1 = new JLabel("Información");
-		lblNewLabel_2_1.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		lblNewLabel_2_1.setForeground(new Color(255, 250, 250));
+		lblNewLabel_2_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		lblNewLabel_2_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_1.setBounds(10, 187, 154, 19);
+		lblNewLabel_2_1.setBounds(30, 187, 154, 19);
 		contentPane.add(lblNewLabel_2_1);
 		
 		JButton btnNewButton_1_1 = new JButton("Ir");
@@ -125,8 +128,13 @@ public class menu extends JFrame {
 				i.setVisible(true);
 			}
 		});
-		btnNewButton_1_1.setBounds(42, 204, 93, 19);
+		btnNewButton_1_1.setBounds(59, 206, 93, 19);
 		contentPane.add(btnNewButton_1_1);
+		
+		JLabel lblNewLabel_5 = new JLabel("New label");
+		lblNewLabel_5.setIcon(new ImageIcon(menu.class.getResource("/imagen/windowsxp (1).jpg")));
+		lblNewLabel_5.setBounds(0, 0, 531, 267);
+		contentPane.add(lblNewLabel_5);
 
 	}
 }

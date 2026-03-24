@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.SwingConstants;
+import javax.swing.ImageIcon;
 
 public class calculadora extends JFrame {
 
@@ -37,7 +38,7 @@ public class calculadora extends JFrame {
 
 	public calculadora() {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(1000, 100, 220, 310);
+		setBounds(1000, 100, 224, 316);
 		this.setResizable(false);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -155,6 +156,11 @@ public class calculadora extends JFrame {
 		c.setBounds(22, 216, 157, 34);
 		contentPane.add(c);
 		c.setColumns(10);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon(calculadora.class.getResource("/imagen/imagen_2026-03-09_233305375.png")));
+		lblNewLabel_1.setBounds(0, -13, 224, 296);
+		contentPane.add(lblNewLabel_1);
 		
 		
 		

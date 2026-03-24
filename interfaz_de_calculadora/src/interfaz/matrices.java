@@ -11,6 +11,8 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
+import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
 
 public class matrices extends JFrame {
 
@@ -34,7 +36,7 @@ public class matrices extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("Matrices");
 		this.setResizable(false); 
-		this.setSize(350, 200);
+		this.setSize(512, 306);
 		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(173, 255, 47));
@@ -43,9 +45,10 @@ public class matrices extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Sistema de ecuaciones");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBackground(new Color(255, 255, 255));
-		lblNewLabel.setFont(new Font("Times New Roman", Font.ITALIC, 16));
-		lblNewLabel.setBounds(97, 11, 153, 27);
+		lblNewLabel.setFont(new Font("Times New Roman", Font.ITALIC, 20));
+		lblNewLabel.setBounds(133, 11, 202, 27);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnNewButton = new JButton("Volver a menú");
@@ -57,7 +60,7 @@ public class matrices extends JFrame {
 				matrices.this.dispose();
 			}
 		});
-		btnNewButton.setBounds(110, 127, 125, 23);
+		btnNewButton.setBounds(185, 227, 125, 23);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("2x2");
@@ -68,7 +71,7 @@ public class matrices extends JFrame {
 				matrices.this.dispose();
 			}
 		});
-		btnNewButton_1.setBounds(42, 60, 89, 23);
+		btnNewButton_1.setBounds(64, 183, 89, 23);
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("3x3");
@@ -79,8 +82,18 @@ public class matrices extends JFrame {
 				matrices.this.dispose();
 			}
 		});
-		btnNewButton_2.setBounds(208, 60, 89, 23);
+		btnNewButton_2.setBounds(330, 183, 89, 23);
 		contentPane.add(btnNewButton_2);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon(matrices.class.getResource("/imagen/sistema22 (1).png")));
+		lblNewLabel_1.setBounds(10, 51, 202, 121);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("New label");
+		lblNewLabel_1_1.setIcon(new ImageIcon(matrices.class.getResource("/imagen/sistema 3x3 (1).png")));
+		lblNewLabel_1_1.setBounds(277, 51, 209, 121);
+		contentPane.add(lblNewLabel_1_1);
 
 	}
 }

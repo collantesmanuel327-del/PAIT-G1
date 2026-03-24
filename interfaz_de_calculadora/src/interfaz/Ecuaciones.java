@@ -40,7 +40,7 @@ public class Ecuaciones extends JFrame {
 	public Ecuaciones() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
-		setSize(449, 258);
+		setSize(455, 264);
 		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 250, 205));

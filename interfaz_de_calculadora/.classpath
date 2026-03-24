@@ -58,5 +58,7 @@
 	<classpathentry kind="lib" path="librerias/xmlbeans-5.1.1.jar"/>
 	<classpathentry kind="lib" path="librerias/xmlgraphics-commons-2.6.jar"/>
 	<classpathentry kind="lib" path="librerias/xmlsec-3.0.0.jar"/>
+	<classpathentry kind="lib" path="librerias/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="librerias/jfreechart-1.0.19.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
